@@ -1,0 +1,2154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8a1ddbf75087be635dd6a4a03020d6c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8a1ddbf75087be635dd6a4a03020d6c9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8a1ddbf75087be635dd6a4a03020d6c9 = L.map(
+                "map_8a1ddbf75087be635dd6a4a03020d6c9",
+                {
+                    center: [39.7392, -104.9903],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6343be354903d8b6dbb885baf824c329 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_6343be354903d8b6dbb885baf824c329.addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var marker_2565dea21918dfb8145b09a28dff80ed = L.marker(
+                [39.701235, -104.98886],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_13187485c9e372e9b31cbf480fd91bb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2565dea21918dfb8145b09a28dff80ed.setIcon(icon_13187485c9e372e9b31cbf480fd91bb0);
+        
+    
+        var popup_0c225201b69a82e108f0edf797e98660 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_206160096edd98604c8a773868550362 = $(`<div id="html_206160096edd98604c8a773868550362" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> I-25 / Broadway Station<br>         <b>Local Routes:</b> 0-0L-11-14<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D-E-H<br>         <b>Address:</b> 901 S Broadway<br>         <b>Parcel ID:</b> Stop#: 23061 (South)<br />Stop#: 23041 (North)<br>         <b>Location:</b> I-25 & Broadway<br>         <b>Rail Line:</b> D-E-H<br>         <b>Stop ID:</b> 33686         </div>`)[0];
+                popup_0c225201b69a82e108f0edf797e98660.setContent(html_206160096edd98604c8a773868550362);
+            
+        
+
+        marker_2565dea21918dfb8145b09a28dff80ed.bindPopup(popup_0c225201b69a82e108f0edf797e98660)
+        ;
+
+        
+    
+    
+            var marker_f14cc0cee44b09a73b1f83cc5fce316d = L.marker(
+                [39.758977, -104.973786],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_41825be0722c5167b1ba4dbf98bb8669 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f14cc0cee44b09a73b1f83cc5fce316d.setIcon(icon_41825be0722c5167b1ba4dbf98bb8669);
+        
+    
+        var popup_eeae0ae3f0f7f75a230e10691bc287db = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_12c011ff4469bbbf368a624d54367076 = $(`<div id="html_12c011ff4469bbbf368a624d54367076" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 30th / Downing Station<br>         <b>Local Routes:</b> 12-28-34<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> L<br>         <b>Address:</b> 2999 Downing St<br>         <b>Parcel ID:</b> Stop#: 23051<br>         <b>Location:</b> Downing St & California St<br>         <b>Rail Line:</b> L<br>         <b>Stop ID:</b> 33703         </div>`)[0];
+                popup_eeae0ae3f0f7f75a230e10691bc287db.setContent(html_12c011ff4469bbbf368a624d54367076);
+            
+        
+
+        marker_f14cc0cee44b09a73b1f83cc5fce316d.bindPopup(popup_eeae0ae3f0f7f75a230e10691bc287db)
+        ;
+
+        
+    
+    
+            var marker_df863aa4da982e49cb09e9f22abe64d3 = L.marker(
+                [39.70892, -104.992883],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_dc4784a964bea9487208df3fa4f867a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_df863aa4da982e49cb09e9f22abe64d3.setIcon(icon_dc4784a964bea9487208df3fa4f867a6);
+        
+    
+        var popup_848b15a1d6dfdf18dc9f12d196875816 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4addd7eabfa7ca77e85b76b332a95519 = $(`<div id="html_4addd7eabfa7ca77e85b76b332a95519" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Alameda Station<br>         <b>Local Routes:</b> 1-3-4-52<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D-E-H<br>         <b>Address:</b> 499 S Cherokee St<br>         <b>Parcel ID:</b> Stop#: 23060 (South)<br />Stop#: 23042 (North)<br>         <b>Location:</b> Cherokee St & Alaska Pl<br>         <b>Rail Line:</b> D-E-H<br>         <b>Stop ID:</b> 33704         </div>`)[0];
+                popup_848b15a1d6dfdf18dc9f12d196875816.setContent(html_4addd7eabfa7ca77e85b76b332a95519);
+            
+        
+
+        marker_df863aa4da982e49cb09e9f22abe64d3.bindPopup(popup_848b15a1d6dfdf18dc9f12d196875816)
+        ;
+
+        
+    
+    
+            var marker_ebcc34d232a9583c9ebc28c111f15a26 = L.marker(
+                [39.601315, -104.887494],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_108e848c434c5b71a08b004691c11086 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ebcc34d232a9583c9ebc28c111f15a26.setIcon(icon_108e848c434c5b71a08b004691c11086);
+        
+    
+        var popup_348106fb17bc58a717fc5e0c821616d1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3737d622b739b815b2cd0f4888203267 = $(`<div id="html_3737d622b739b815b2cd0f4888203267" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Arapahoe at Village Center Station<br>         <b>Local Routes:</b> 66-153-169<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> AT<br>         <b>Special Routes:</b> E-R<br>         <b>Address:</b> 8800 E Caley Ave<br>         <b>Parcel ID:</b> Stop#: 25990 (South)<br />Stop#: 34008 (North)<br>         <b>Location:</b> Caley & Yosemite <br>         <b>Rail Line:</b> E-R<br>         <b>Stop ID:</b> 33705         </div>`)[0];
+                popup_348106fb17bc58a717fc5e0c821616d1.setContent(html_3737d622b739b815b2cd0f4888203267);
+            
+        
+
+        marker_ebcc34d232a9583c9ebc28c111f15a26.bindPopup(popup_348106fb17bc58a717fc5e0c821616d1)
+        ;
+
+        
+    
+    
+            var marker_0be599607663b98ef4a14f7f7d885a7a = L.marker(
+                [39.627524, -104.904746],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_a0d390bb2a9c6c2259e9b47618b5ffdc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0be599607663b98ef4a14f7f7d885a7a.setIcon(icon_a0d390bb2a9c6c2259e9b47618b5ffdc);
+        
+    
+        var popup_377556e222b9134c4286a2c6a6bceda3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_19ee16a7f919031a0c73491dc4757b14 = $(`<div id="html_19ee16a7f919031a0c73491dc4757b14" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Belleview Station<br>         <b>Local Routes:</b> 73<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-R<br>         <b>Address:</b> 4855 S Quebec St<br>         <b>Parcel ID:</b> Stop#: 25991 (South)<br />Stop#: 34010 (North)<br>         <b>Location:</b> Belleview & I-25<br>         <b>Rail Line:</b> E-R<br>         <b>Stop ID:</b> 33706         </div>`)[0];
+                popup_377556e222b9134c4286a2c6a6bceda3.setContent(html_19ee16a7f919031a0c73491dc4757b14);
+            
+        
+
+        marker_0be599607663b98ef4a14f7f7d885a7a.bindPopup(popup_377556e222b9134c4286a2c6a6bceda3)
+        ;
+
+        
+    
+    
+            var marker_6e2a144dff315a18823dde563e80dabe = L.marker(
+                [39.708879, -104.989493],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_f821fc44ae36ddbd9c5f2ef6b26048c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6e2a144dff315a18823dde563e80dabe.setIcon(icon_f821fc44ae36ddbd9c5f2ef6b26048c5);
+        
+    
+        var popup_696745b53db3144d316e689907422817 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ee17233dc77d3d671534756d683cf500 = $(`<div id="html_ee17233dc77d3d671534756d683cf500" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Colorado Station<br>         <b>Local Routes:</b> 21-40-46<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-H<br>         <b>Address:</b> 4300 E Colorado Center Dr<br>         <b>Parcel ID:</b> Stop#: 25980 (South)<br />Stop#: 34013 (North)<br>         <b>Location:</b> Evans & I-25<br>         <b>Rail Line:</b> E-H<br>         <b>Stop ID:</b> 33708         </div>`)[0];
+                popup_696745b53db3144d316e689907422817.setContent(html_ee17233dc77d3d671534756d683cf500);
+            
+        
+
+        marker_6e2a144dff315a18823dde563e80dabe.bindPopup(popup_696745b53db3144d316e689907422817)
+        ;
+
+        
+    
+    
+            var marker_c154d6f6efb4bdc3ce56fea6f80f5663 = L.marker(
+                [39.679398, -104.937673],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_f87403dd0d746dd8b999d6af1fded816 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c154d6f6efb4bdc3ce56fea6f80f5663.setIcon(icon_f87403dd0d746dd8b999d6af1fded816);
+        
+    
+        var popup_b57d7b79480a84dc73d5f2eeb6a13953 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bdb46f9bea11cdbd8e8aef69b9b329d3 = $(`<div id="html_bdb46f9bea11cdbd8e8aef69b9b329d3" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> County Line Station<br>         <b>Local Routes:</b> 402L<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-R<br>         <b>Address:</b> 8340 S Valley Hwy<br>         <b>Parcel ID:</b> Stop#: 25988 (South)<br />Stop#: 34006 (North)<br>         <b>Location:</b> County Line Rd & I-25 (Park Meadows Mall)<br>         <b>Rail Line:</b> E-R<br>         <b>Stop ID:</b> 33709         </div>`)[0];
+                popup_b57d7b79480a84dc73d5f2eeb6a13953.setContent(html_bdb46f9bea11cdbd8e8aef69b9b329d3);
+            
+        
+
+        marker_c154d6f6efb4bdc3ce56fea6f80f5663.bindPopup(popup_b57d7b79480a84dc73d5f2eeb6a13953)
+        ;
+
+        
+    
+    
+            var marker_5245a7af19cc0a2ca262ecb14d92f07d = L.marker(
+                [39.561964, -104.870532],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_be0b739e8b441598be69c81853d41c41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5245a7af19cc0a2ca262ecb14d92f07d.setIcon(icon_be0b739e8b441598be69c81853d41c41);
+        
+    
+        var popup_5151552ff4212d999aa62593caa38660 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_342c81bdfd1e8fb6146ba70c27953464 = $(`<div id="html_342c81bdfd1e8fb6146ba70c27953464" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Dayton Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> H-R<br>         <b>Address:</b> 4151 S Dallas St<br>         <b>Parcel ID:</b> Stop#: 25974 (South)<br />Stop#: 34004 (North)<br>         <b>Location:</b> I-225 & Yosemite<br>         <b>Rail Line:</b> H-R<br>         <b>Stop ID:</b> 33710         </div>`)[0];
+                popup_5151552ff4212d999aa62593caa38660.setContent(html_342c81bdfd1e8fb6146ba70c27953464);
+            
+        
+
+        marker_5245a7af19cc0a2ca262ecb14d92f07d.bindPopup(popup_5151552ff4212d999aa62593caa38660)
+        ;
+
+        
+    
+    
+            var marker_4f76e10e8cf5bad642a7bd9b3136f203 = L.marker(
+                [39.643677, -104.878653],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_58a1180c2c3b13d12902f07a8da8f130 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4f76e10e8cf5bad642a7bd9b3136f203.setIcon(icon_58a1180c2c3b13d12902f07a8da8f130);
+        
+    
+        var popup_f0a3103adcff221a871de92c6f4c7304 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_871be4d9aaeaa24e1e2fce4a7f814ebb = $(`<div id="html_871be4d9aaeaa24e1e2fce4a7f814ebb" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Dry Creek Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-R<br>         <b>Address:</b> 9450 E Dry Creek Rd<br>         <b>Parcel ID:</b> Stop#: 25989 (South)<br />Stop#: 34007 (North)<br>         <b>Location:</b> Dry Creek & I-25<br>         <b>Rail Line:</b> E-R<br>         <b>Stop ID:</b> 33711         </div>`)[0];
+                popup_f0a3103adcff221a871de92c6f4c7304.setContent(html_871be4d9aaeaa24e1e2fce4a7f814ebb);
+            
+        
+
+        marker_4f76e10e8cf5bad642a7bd9b3136f203.bindPopup(popup_f0a3103adcff221a871de92c6f4c7304)
+        ;
+
+        
+    
+    
+            var marker_5d4dd515add86f0732bf4bd41e0eab3f = L.marker(
+                [39.579487, -104.877416],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_7ecc01847397e14e95bc9b3e8c2538ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5d4dd515add86f0732bf4bd41e0eab3f.setIcon(icon_7ecc01847397e14e95bc9b3e8c2538ae);
+        
+    
+        var popup_2e994c33c7e26d2be845e8ad1abf9fa6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3890e47bae5523c60ce57841c8b83a26 = $(`<div id="html_3890e47bae5523c60ce57841c8b83a26" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Englewood Station<br>         <b>Local Routes:</b> 0-12-35-51-TRLY<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D<br>         <b>Address:</b> 899 W Floyd Ave<br>         <b>Parcel ID:</b> Stop#: 25436 (South)<br />Stop#: 24890 (North)<br>         <b>Location:</b> Floyd & Inca <br>         <b>Rail Line:</b> D<br>         <b>Stop ID:</b> 33712         </div>`)[0];
+                popup_2e994c33c7e26d2be845e8ad1abf9fa6.setContent(html_3890e47bae5523c60ce57841c8b83a26);
+            
+        
+
+        marker_5d4dd515add86f0732bf4bd41e0eab3f.bindPopup(popup_2e994c33c7e26d2be845e8ad1abf9fa6)
+        ;
+
+        
+    
+    
+            var marker_b14890eb84e7e64673d05184e18a3f72 = L.marker(
+                [39.655506, -104.999664],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_8116dc85ded91ac218a19e8bfe00b36a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b14890eb84e7e64673d05184e18a3f72.setIcon(icon_8116dc85ded91ac218a19e8bfe00b36a);
+        
+    
+        var popup_98e4ae89e84b8b20d24e5e51e93af8f9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b5c13d92901dc2a7d4e6c26b6b0419ca = $(`<div id="html_b5c13d92901dc2a7d4e6c26b6b0419ca" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Evans Station<br>         <b>Local Routes:</b> 21<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D-E-H<br>         <b>Address:</b> 2151 S Delaware St<br>         <b>Parcel ID:</b> Stop#: 25435 (South)<br />Stop#: 24882 (North)<br>         <b>Location:</b> W Evans & Delaware <br>         <b>Rail Line:</b> D-E-H<br>         <b>Stop ID:</b> 33713         </div>`)[0];
+                popup_98e4ae89e84b8b20d24e5e51e93af8f9.setContent(html_b5c13d92901dc2a7d4e6c26b6b0419ca);
+            
+        
+
+        marker_b14890eb84e7e64673d05184e18a3f72.bindPopup(popup_98e4ae89e84b8b20d24e5e51e93af8f9)
+        ;
+
+        
+    
+    
+            var marker_423669566276bbad36d0302469450c8e = L.marker(
+                [39.677962, -104.992465],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_198691708e0fcadba98ce9e9d3917023 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_423669566276bbad36d0302469450c8e.setIcon(icon_198691708e0fcadba98ce9e9d3917023);
+        
+    
+        var popup_08619c005e83449fbfdfae68b1849964 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b9c074ca8399fd86bddf20c4b6ef6a1e = $(`<div id="html_b9c074ca8399fd86bddf20c4b6ef6a1e" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Lincoln Station<br>         <b>Local Routes:</b> 483<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-R<br>         <b>Address:</b> 10203 Station Way<br>         <b>Parcel ID:</b> Stop#: 25973 (South)<br />Stop#: 34005 (North)<br>         <b>Location:</b> Lincoln Ave & I-25<br>         <b>Rail Line:</b> E-R<br>         <b>Stop ID:</b> 33714         </div>`)[0];
+                popup_08619c005e83449fbfdfae68b1849964.setContent(html_b9c074ca8399fd86bddf20c4b6ef6a1e);
+            
+        
+
+        marker_423669566276bbad36d0302469450c8e.bindPopup(popup_08619c005e83449fbfdfae68b1849964)
+        ;
+
+        
+    
+    
+            var marker_533fe1877c7c0513146f1064854f3ef8 = L.marker(
+                [39.546147, -104.869738],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_f4abd93b22c2a9efe3d97b871f24bc67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_533fe1877c7c0513146f1064854f3ef8.setIcon(icon_f4abd93b22c2a9efe3d97b871f24bc67);
+        
+    
+        var popup_ac49b8895756e9a909a859b4cf9923d9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_33fdd6518634edaaf548f4b4a14daafb = $(`<div id="html_33fdd6518634edaaf548f4b4a14daafb" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Littleton / Downtown Station<br>         <b>Local Routes:</b> 29-36-59-66<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D<br>         <b>Address:</b> 5777 S Prince St<br>         <b>Parcel ID:</b> Stop#: 25438 (South)<br />Stop#: 24894 (North)<br>         <b>Location:</b> SE Corner of Alamo & Prince St<br>         <b>Rail Line:</b> D<br>         <b>Stop ID:</b> 33715         </div>`)[0];
+                popup_ac49b8895756e9a909a859b4cf9923d9.setContent(html_33fdd6518634edaaf548f4b4a14daafb);
+            
+        
+
+        marker_533fe1877c7c0513146f1064854f3ef8.bindPopup(popup_ac49b8895756e9a909a859b4cf9923d9)
+        ;
+
+        
+    
+    
+            var marker_dd21feb482a78feb08b10a56dfd93568 = L.marker(
+                [39.611904, -105.01521],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_688ebe129e29351eeec5f1bfff8cb63b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_dd21feb482a78feb08b10a56dfd93568.setIcon(icon_688ebe129e29351eeec5f1bfff8cb63b);
+        
+    
+        var popup_a56687727fdef044d2cd1b4de92fac62 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b6a9d1521cca75a317730e0c75f84db = $(`<div id="html_4b6a9d1521cca75a317730e0c75f84db" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Littleton / Mineral Station<br>         <b>Local Routes:</b> 402L<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D<br>         <b>Address:</b> 3203 W Mineral Ave<br>         <b>Parcel ID:</b> Stop#: 24896<br>         <b>Location:</b> S Santa Fe & Mineral Ave<br>         <b>Rail Line:</b> D<br>         <b>Stop ID:</b> 33716         </div>`)[0];
+                popup_a56687727fdef044d2cd1b4de92fac62.setContent(html_4b6a9d1521cca75a317730e0c75f84db);
+            
+        
+
+        marker_dd21feb482a78feb08b10a56dfd93568.bindPopup(popup_a56687727fdef044d2cd1b4de92fac62)
+        ;
+
+        
+    
+    
+            var marker_17fdd000f893294b3ec7edab43619138 = L.marker(
+                [39.658414, -104.845517],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_828567bb81d1f81062133d3e339d87a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_17fdd000f893294b3ec7edab43619138.setIcon(icon_828567bb81d1f81062133d3e339d87a5);
+        
+    
+        var popup_6d97ea10cac3e5ff2b2b3b6ce2de6cee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_07c6607e834f808997e478f80c8ec763 = $(`<div id="html_07c6607e834f808997e478f80c8ec763" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Nine Mile Station<br>         <b>Local Routes:</b> 83D-83L-121-130-133-135-139-483<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> AT-ATA<br>         <b>Special Routes:</b> H-R<br>         <b>Address:</b> 3181 S Parker Rd<br>         <b>Parcel ID:</b> Stop#: 34003<br>         <b>Location:</b> I-225 & Parker Rd<br>         <b>Rail Line:</b> H-R<br>         <b>Stop ID:</b> 33719         </div>`)[0];
+                popup_6d97ea10cac3e5ff2b2b3b6ce2de6cee.setContent(html_07c6607e834f808997e478f80c8ec763);
+            
+        
+
+        marker_17fdd000f893294b3ec7edab43619138.bindPopup(popup_6d97ea10cac3e5ff2b2b3b6ce2de6cee)
+        ;
+
+        
+    
+    
+            var marker_3217ae976ee56661e1ac5e1f88bd9565 = L.marker(
+                [39.6134, -104.89641],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_5516aa5cfbaaca4c5d74b8a4ab552971 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3217ae976ee56661e1ac5e1f88bd9565.setIcon(icon_5516aa5cfbaaca4c5d74b8a4ab552971);
+        
+    
+        var popup_abe1a1ab393bfc0a7ce6065aba49e373 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5c430e665ee80fd88f63fc9b3f2eadee = $(`<div id="html_5c430e665ee80fd88f63fc9b3f2eadee" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Orchard Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-R<br>         <b>Address:</b> 5652 Greenwood Plaza Blvd<br>         <b>Parcel ID:</b> Stop#: 25983 (South)<br />Stop#: 34009 (North)<br>         <b>Location:</b> E Orchard Rd & I-25<br>         <b>Rail Line:</b> E-R<br>         <b>Stop ID:</b> 33720         </div>`)[0];
+                popup_abe1a1ab393bfc0a7ce6065aba49e373.setContent(html_5c430e665ee80fd88f63fc9b3f2eadee);
+            
+        
+
+        marker_3217ae976ee56661e1ac5e1f88bd9565.bindPopup(popup_abe1a1ab393bfc0a7ce6065aba49e373)
+        ;
+
+        
+    
+    
+            var marker_ea88ecc468f9febbc995f73bfd57b101 = L.marker(
+                [39.648898, -104.915046],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_605981a420c035f2bc002fac3ae205a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ea88ecc468f9febbc995f73bfd57b101.setIcon(icon_605981a420c035f2bc002fac3ae205a8);
+        
+    
+        var popup_058df5a18ce1daf39baf1d6bb1b4909a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_871893ddf4fc56275bf512f56e10686a = $(`<div id="html_871893ddf4fc56275bf512f56e10686a" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Southmoor Station<br>         <b>Local Routes:</b> 40-46-65-105<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-H<br>         <b>Address:</b> 3737 S Monaco Pkwy<br>         <b>Parcel ID:</b> Stop#: 25978 (South)<br />Stop#: 34011 (North)<br>         <b>Location:</b> S Monaco & Mansfield <br>         <b>Rail Line:</b> E-H<br>         <b>Stop ID:</b> 33721         </div>`)[0];
+                popup_058df5a18ce1daf39baf1d6bb1b4909a.setContent(html_871893ddf4fc56275bf512f56e10686a);
+            
+        
+
+        marker_ea88ecc468f9febbc995f73bfd57b101.bindPopup(popup_058df5a18ce1daf39baf1d6bb1b4909a)
+        ;
+
+        
+    
+    
+            var marker_0fcdc54a7a4ea02671ba89038f2aab9f = L.marker(
+                [39.684914, -104.964677],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_debe4a9c84f8cfb98924a01d2c190a4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0fcdc54a7a4ea02671ba89038f2aab9f.setIcon(icon_debe4a9c84f8cfb98924a01d2c190a4a);
+        
+    
+        var popup_d027c762c04a7513acb30c20abfb3985 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5c301e951015d4dd830ce12722b6f474 = $(`<div id="html_5c301e951015d4dd830ce12722b6f474" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> University of Denver Station<br>         <b>Local Routes:</b> 24<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-H<br>         <b>Address:</b> 1901 E Buchtel Blvd<br>         <b>Parcel ID:</b> Stop#: 25981 (South)<br />Stop#: 34014 (North)<br>         <b>Location:</b> Buchtel & University<br>         <b>Rail Line:</b> E-H<br>         <b>Stop ID:</b> 33722         </div>`)[0];
+                popup_d027c762c04a7513acb30c20abfb3985.setContent(html_5c301e951015d4dd830ce12722b6f474);
+            
+        
+
+        marker_0fcdc54a7a4ea02671ba89038f2aab9f.bindPopup(popup_d027c762c04a7513acb30c20abfb3985)
+        ;
+
+        
+    
+    
+            var marker_509ec83b009473c355e8d8de550a1a2c = L.marker(
+                [39.668779, -104.927566],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_c159766933dc34da5b6f24d2559a294d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_509ec83b009473c355e8d8de550a1a2c.setIcon(icon_c159766933dc34da5b6f24d2559a294d);
+        
+    
+        var popup_aa568e5540c214c1e824480b6ed60f68 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_99c8c41bf470f90dfdc8b1f09d599f17 = $(`<div id="html_99c8c41bf470f90dfdc8b1f09d599f17" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Yale Station<br>         <b>Local Routes:</b> 46<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-H<br>         <b>Address:</b> 5315 E Yale Cir<br>         <b>Parcel ID:</b> Stop#: 25979 (South)<br />Stop#: 34012 (North)<br>         <b>Location:</b> Yale & I-25<br>         <b>Rail Line:</b> E-H<br>         <b>Stop ID:</b> 33723         </div>`)[0];
+                popup_aa568e5540c214c1e824480b6ed60f68.setContent(html_99c8c41bf470f90dfdc8b1f09d599f17);
+            
+        
+
+        marker_509ec83b009473c355e8d8de550a1a2c.bindPopup(popup_aa568e5540c214c1e824480b6ed60f68)
+        ;
+
+        
+    
+    
+            var marker_c739a0eb3a87f8e0e74b33dc16ebf313 = L.marker(
+                [39.740277, -105.001338],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_e06fdd43217c7e96c1815ca39982eb43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c739a0eb3a87f8e0e74b33dc16ebf313.setIcon(icon_e06fdd43217c7e96c1815ca39982eb43);
+        
+    
+        var popup_287c62f39f922fe41ef0ad6225bf1050 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_703d7ec9174604536ed5af4edbb7bf0b = $(`<div id="html_703d7ec9174604536ed5af4edbb7bf0b" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Colfax at Auraria Station<br>         <b>Local Routes:</b> 16<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D-H<br>         <b>Address:</b> 1101 W Colfax Ave<br>         <b>Parcel ID:</b> Stop#: 23058 (South)<br />Stop#: 23044 (North)<br>         <b>Location:</b> Colfax & Lipan<br>         <b>Rail Line:</b> D-H<br>         <b>Stop ID:</b> 33724         </div>`)[0];
+                popup_287c62f39f922fe41ef0ad6225bf1050.setContent(html_703d7ec9174604536ed5af4edbb7bf0b);
+            
+        
+
+        marker_c739a0eb3a87f8e0e74b33dc16ebf313.bindPopup(popup_287c62f39f922fe41ef0ad6225bf1050)
+        ;
+
+        
+    
+    
+            var marker_5af861993fda67ab4d8689aa49a47213 = L.marker(
+                [39.692708, -104.97812],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_08baf013e7dad456dc888f0c7dc7e152 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5af861993fda67ab4d8689aa49a47213.setIcon(icon_08baf013e7dad456dc888f0c7dc7e152);
+        
+    
+        var popup_6d91e21853670713021f1b3a9e19b746 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_05b56edbb7476e3a6802d2a5f8e70826 = $(`<div id="html_05b56edbb7476e3a6802d2a5f8e70826" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Louisiana / Pearl Station<br>         <b>Local Routes:</b> 11-12<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-H<br>         <b>Address:</b> 755 E Louisiana Ave<br>         <b>Parcel ID:</b> Stop#: 25982 (South)<br />Stop#: 34015 (North)<br>         <b>Location:</b> Louisiana & Buchtel<br>         <b>Rail Line:</b> E-H<br>         <b>Stop ID:</b> 33725         </div>`)[0];
+                popup_6d91e21853670713021f1b3a9e19b746.setContent(html_05b56edbb7476e3a6802d2a5f8e70826);
+            
+        
+
+        marker_5af861993fda67ab4d8689aa49a47213.bindPopup(popup_6d91e21853670713021f1b3a9e19b746)
+        ;
+
+        
+    
+    
+            var marker_f3a4275853e29ae7027efe84e8177ebe = L.marker(
+                [39.643421, -105.004535],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_1dfdcb71f0182b981844dcdda900ebfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f3a4275853e29ae7027efe84e8177ebe.setIcon(icon_1dfdcb71f0182b981844dcdda900ebfb);
+        
+    
+        var popup_ed2d370b374c073f3b423efb69255281 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5ecd1140adbec3b2362bb3539b343a9d = $(`<div id="html_5ecd1140adbec3b2362bb3539b343a9d" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Oxford-City of Sheridan Station<br>         <b>Local Routes:</b> 51<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D<br>         <b>Address:</b> 4101 Windermere St<br>         <b>Parcel ID:</b> Stop#: 25437 (South)<br />Stop#: 24892 (North)<br>         <b>Location:</b> Santa Fe & Oxford<br>         <b>Rail Line:</b> D<br>         <b>Stop ID:</b> 33726         </div>`)[0];
+                popup_ed2d370b374c073f3b423efb69255281.setContent(html_5ecd1140adbec3b2362bb3539b343a9d);
+            
+        
+
+        marker_f3a4275853e29ae7027efe84e8177ebe.bindPopup(popup_ed2d370b374c073f3b423efb69255281)
+        ;
+
+        
+    
+    
+            var marker_3fe542b0414d5de2421be4e7f69f2ddb = L.marker(
+                [39.754338, -105.00214],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_a9b1bacc537eb225daca0d74a14640ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3fe542b0414d5de2421be4e7f69f2ddb.setIcon(icon_a9b1bacc537eb225daca0d74a14640ce);
+        
+    
+        var popup_510d29fa44a3d0e88f5b7c0f158ef2cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3fc09747c992ab2cc80cc24c09224390 = $(`<div id="html_3fc09747c992ab2cc80cc24c09224390" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Union Station Transit Center<br>         <b>Local Routes:</b> 0-9-10-15-19-20-32-MALL<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> 120X-LD1-FF1-FF3<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-W-A-B-G-N<br>         <b>Address:</b> 1700 Wewatta St<br>         <b>Parcel ID:</b> Stop#: 25434<br>         <b>Location:</b> 17th St & Wewatta<br>         <b>Rail Line:</b> E-W-A-B-G-N<br>         <b>Stop ID:</b> 33727         </div>`)[0];
+                popup_510d29fa44a3d0e88f5b7c0f158ef2cc.setContent(html_3fc09747c992ab2cc80cc24c09224390);
+            
+        
+
+        marker_3fe542b0414d5de2421be4e7f69f2ddb.bindPopup(popup_510d29fa44a3d0e88f5b7c0f158ef2cc)
+        ;
+
+        
+    
+    
+            var marker_0e769231a39313e3a4515773bf1eb73d = L.marker(
+                [39.76983, -104.785452],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_a0a97f66a010b229cd43f4e2d6ce7716 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0e769231a39313e3a4515773bf1eb73d.setIcon(icon_a0a97f66a010b229cd43f4e2d6ce7716);
+        
+    
+        var popup_b051d338bfc365261b997c76eb052ec8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8ab13e8c604ad25e5bb2451a793bd4fa = $(`<div id="html_8ab13e8c604ad25e5bb2451a793bd4fa" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 40th / Airport - Gateway Park Station<br>         <b>Local Routes:</b> 37-42-45-121-169<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> ATA<br>         <b>Special Routes:</b> A<br>         <b>Address:</b> 3900 N Salida St<br>         <b>Parcel ID:</b> Stop#: 34474 (South)<br />Stop#: 34473 (North)<br>         <b>Location:</b> 40th Ave & Airport Blvd<br>         <b>Rail Line:</b> A<br>         <b>Stop ID:</b> 33740         </div>`)[0];
+                popup_b051d338bfc365261b997c76eb052ec8.setContent(html_8ab13e8c604ad25e5bb2451a793bd4fa);
+            
+        
+
+        marker_0e769231a39313e3a4515773bf1eb73d.bindPopup(popup_b051d338bfc365261b997c76eb052ec8)
+        ;
+
+        
+    
+    
+            var marker_79179588ce0213ec355c6fd5e54ec135 = L.marker(
+                [39.719005, -105.129257],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_994804b6845a1f10781b6711605c9ed0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_79179588ce0213ec355c6fd5e54ec135.setIcon(icon_994804b6845a1f10781b6711605c9ed0);
+        
+    
+        var popup_db08e449e181fc517ce8d10a2eaa816e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a9ce21341030abd3a3888b1c2db00f2 = $(`<div id="html_0a9ce21341030abd3a3888b1c2db00f2" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Federal Center Station<br>         <b>Local Routes:</b> 3-99-100<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> 116X-CV-EV<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 11601 W 2nd Place<br>         <b>Parcel ID:</b> Stop#: 33955 (East)<br />Stop#: 33566 (West)<br>         <b>Location:</b> W 2nd Place & Routt St<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 33741         </div>`)[0];
+                popup_db08e449e181fc517ce8d10a2eaa816e.setContent(html_0a9ce21341030abd3a3888b1c2db00f2);
+            
+        
+
+        marker_79179588ce0213ec355c6fd5e54ec135.bindPopup(popup_db08e449e181fc517ce8d10a2eaa816e)
+        ;
+
+        
+    
+    
+            var marker_59089979f68d83bebc6ae2573da451e2 = L.marker(
+                [39.798974, -105.078976],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_ab9cc056275669e1bd83fe07196f7336 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_59089979f68d83bebc6ae2573da451e2.setIcon(icon_ab9cc056275669e1bd83fe07196f7336);
+        
+    
+        var popup_a989b95c5239a239f557558510e437a1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_960acffc630b774277e0659f665ece83 = $(`<div id="html_960acffc630b774277e0659f665ece83" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Olde Town Arvada Station<br>         <b>Local Routes:</b> 52-72-76<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> G<br>         <b>Address:</b> 5575 Vance St<br>         <b>Parcel ID:</b> Stop#: 34541 (East)<br />Stop#: 34542 (West)<br>         <b>Location:</b> Vance St & W 56th Ave<br>         <b>Rail Line:</b> G<br>         <b>Stop ID:</b> 33833         </div>`)[0];
+                popup_a989b95c5239a239f557558510e437a1.setContent(html_960acffc630b774277e0659f665ece83);
+            
+        
+
+        marker_59089979f68d83bebc6ae2573da451e2.bindPopup(popup_a989b95c5239a239f557558510e437a1)
+        ;
+
+        
+    
+    
+            var marker_887107072f09e1c4be20c0becba80287 = L.marker(
+                [39.73215, -105.0055],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_8a6e15a2a905300aa3c9f9d86aa633e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_887107072f09e1c4be20c0becba80287.setIcon(icon_8a6e15a2a905300aa3c9f9d86aa633e5);
+        
+    
+        var popup_f99869bbb56fb0b7e5717badf156d64f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_29375ac7c17633c8f98d550c8fef5394 = $(`<div id="html_29375ac7c17633c8f98d550c8fef5394" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 10th / Osage Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D-E-H<br>         <b>Address:</b> 975 Osage St<br>         <b>Parcel ID:</b> Stop#: 23059 (South)<br />Stop#: 23043 (North)<br>         <b>Location:</b> 10th & Osage<br>         <b>Rail Line:</b> D-E-H<br>         <b>Stop ID:</b> 34109         </div>`)[0];
+                popup_f99869bbb56fb0b7e5717badf156d64f.setContent(html_29375ac7c17633c8f98d550c8fef5394);
+            
+        
+
+        marker_887107072f09e1c4be20c0becba80287.bindPopup(popup_f99869bbb56fb0b7e5717badf156d64f)
+        ;
+
+        
+    
+    
+            var marker_6538f3443b9281595790bb095cef0c37 = L.marker(
+                [39.748691, -105.009234],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_7c1abe91f5e32d3de2fd0538a05ff237 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6538f3443b9281595790bb095cef0c37.setIcon(icon_7c1abe91f5e32d3de2fd0538a05ff237);
+        
+    
+        var popup_cc609bebd3d8ef984ed1b717e1615a8e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_67d855775432ece6a436409598f369a8 = $(`<div id="html_67d855775432ece6a436409598f369a8" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Ball Arena / Elitch Gardens Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-W<br>         <b>Address:</b> 1700 9th Street<br>         <b>Parcel ID:</b> Stop#: 25433 (South)<br />Stop#: 25429 (North)<br>         <b>Location:</b> Pepsi Center<br>         <b>Rail Line:</b> E-W<br>         <b>Stop ID:</b> 34110         </div>`)[0];
+                popup_cc609bebd3d8ef984ed1b717e1615a8e.setContent(html_67d855775432ece6a436409598f369a8);
+            
+        
+
+        marker_6538f3443b9281595790bb095cef0c37.bindPopup(popup_cc609bebd3d8ef984ed1b717e1615a8e)
+        ;
+
+        
+    
+    
+            var marker_eeb885552da9e2d9a25ccab60e0ac0bc = L.marker(
+                [39.743181, -105.013483],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_391294afb9543bedf40c0f6fee21dff6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_eeb885552da9e2d9a25ccab60e0ac0bc.setIcon(icon_391294afb9543bedf40c0f6fee21dff6);
+        
+    
+        var popup_37614cea2acabd08346eb41e367c5bcc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4c15cf0d0a3cec36ffbd4e5c33a5d79b = $(`<div id="html_4c15cf0d0a3cec36ffbd4e5c33a5d79b" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Empower Field at Mile High<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-W<br>         <b>Address:</b> 1499 4th Street<br>         <b>Parcel ID:</b> Stop#: 25432 (South)<br />Stop#: 25428 (North)<br>         <b>Location:</b> 4th & Auraria Pkwy<br>         <b>Rail Line:</b> E-W<br>         <b>Stop ID:</b> 34111         </div>`)[0];
+                popup_37614cea2acabd08346eb41e367c5bcc.setContent(html_4c15cf0d0a3cec36ffbd4e5c33a5d79b);
+            
+        
+
+        marker_eeb885552da9e2d9a25ccab60e0ac0bc.bindPopup(popup_37614cea2acabd08346eb41e367c5bcc)
+        ;
+
+        
+    
+    
+            var marker_f2e759b4568e096e651a4ac8478bca48 = L.marker(
+                [39.742207, -105.011133],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_1f740a83a33894349fd262a5b9e388a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f2e759b4568e096e651a4ac8478bca48.setIcon(icon_1f740a83a33894349fd262a5b9e388a7);
+        
+    
+        var popup_40643cd7106f763757dc350bd97f4680 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_12a56abbe577c98c785176ecfe1e1669 = $(`<div id="html_12a56abbe577c98c785176ecfe1e1669" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Auraria West Campus Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E-W<br>         <b>Address:</b> 1250 5th Street<br>         <b>Parcel ID:</b> Stop#: 25431 (South)<br />Stop#: 25427 (North)<br>         <b>Location:</b> 5th & Curtis St<br>         <b>Rail Line:</b> E-W<br>         <b>Stop ID:</b> 34112         </div>`)[0];
+                popup_40643cd7106f763757dc350bd97f4680.setContent(html_12a56abbe577c98c785176ecfe1e1669);
+            
+        
+
+        marker_f2e759b4568e096e651a4ac8478bca48.bindPopup(popup_40643cd7106f763757dc350bd97f4680)
+        ;
+
+        
+    
+    
+            var marker_248a6e5f7107901dedba4bbf5d2097d5 = L.marker(
+                [39.743923, -104.99607],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_e1cd7750d64392932e836f32ec361c7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_248a6e5f7107901dedba4bbf5d2097d5.setIcon(icon_e1cd7750d64392932e836f32ec361c7d);
+        
+    
+        var popup_c105476e3c597248901e8eee89b46656 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3dcf55e26aa6be82e507d386609b7072 = $(`<div id="html_3dcf55e26aa6be82e507d386609b7072" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Theatre District / Convention Center<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D-H<br>         <b>Address:</b> 1325 Stout St<br>         <b>Parcel ID:</b> Stop#: 25884 (South)<br />Stop#: 29104 (North)<br>         <b>Location:</b> Convention Center<br>         <b>Rail Line:</b> D-H<br>         <b>Stop ID:</b> 34113         </div>`)[0];
+                popup_c105476e3c597248901e8eee89b46656.setContent(html_3dcf55e26aa6be82e507d386609b7072);
+            
+        
+
+        marker_248a6e5f7107901dedba4bbf5d2097d5.bindPopup(popup_c105476e3c597248901e8eee89b46656)
+        ;
+
+        
+    
+    
+            var marker_13b61ba5bb653f72f2fc5db4c342f1ae = L.marker(
+                [39.744864, -104.992508],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_63fe7bdad0fd896df93e56a692a54829 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_13b61ba5bb653f72f2fc5db4c342f1ae.setIcon(icon_63fe7bdad0fd896df93e56a692a54829);
+        
+    
+        var popup_95692ce6bfcb88bb4ce310e4539a49ea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bb382c58c67b7687648da7532b6f8d83 = $(`<div id="html_bb382c58c67b7687648da7532b6f8d83" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 16th St / California Station<br>         <b>Local Routes:</b> MALL<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D-H-L<br>         <b>Address:</b> 1516 California St<br>         <b>Parcel ID:</b> Stop#: 23046<br>         <b>Location:</b> 16th St & California<br>         <b>Rail Line:</b> D-H-L<br>         <b>Stop ID:</b> 34114         </div>`)[0];
+                popup_95692ce6bfcb88bb4ce310e4539a49ea.setContent(html_bb382c58c67b7687648da7532b6f8d83);
+            
+        
+
+        marker_13b61ba5bb653f72f2fc5db4c342f1ae.bindPopup(popup_95692ce6bfcb88bb4ce310e4539a49ea)
+        ;
+
+        
+    
+    
+            var marker_33532e32ead50cf316e0fe522aecb41a = L.marker(
+                [39.746142, -104.992797],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_bf0cc05314aa9fb32dc6fe15fed41f7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_33532e32ead50cf316e0fe522aecb41a.setIcon(icon_bf0cc05314aa9fb32dc6fe15fed41f7b);
+        
+    
+        var popup_1e7e81ae759f3ff49eb7eda08a708358 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc6a0b51c10f15f03ce6feb24da49c8b = $(`<div id="html_bc6a0b51c10f15f03ce6feb24da49c8b" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 16th St / Stout Station<br>         <b>Local Routes:</b> MALL<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D-H-L<br>         <b>Address:</b> 1617 Stout St<br>         <b>Parcel ID:</b> Stop#: 23056<br>         <b>Location:</b> 16th St & Stout<br>         <b>Rail Line:</b> D-H-L<br>         <b>Stop ID:</b> 34115         </div>`)[0];
+                popup_1e7e81ae759f3ff49eb7eda08a708358.setContent(html_bc6a0b51c10f15f03ce6feb24da49c8b);
+            
+        
+
+        marker_33532e32ead50cf316e0fe522aecb41a.bindPopup(popup_1e7e81ae759f3ff49eb7eda08a708358)
+        ;
+
+        
+    
+    
+            var marker_0193a20a483d3f2b25cc2d82bf969605 = L.marker(
+                [39.746934, -104.98974],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_bb3b95dcd3262e9931568bd6faf265cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0193a20a483d3f2b25cc2d82bf969605.setIcon(icon_bb3b95dcd3262e9931568bd6faf265cc);
+        
+    
+        var popup_6c13b6929d3153f43b090649510ffe21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9da6b58104293c49d32ab4368283e233 = $(`<div id="html_9da6b58104293c49d32ab4368283e233" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 18th St / California Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D-H-L<br>         <b>Address:</b> 1776 California St<br>         <b>Parcel ID:</b> Stop#: 23047<br>         <b>Location:</b> 18th St & California<br>         <b>Rail Line:</b> D-H-L<br>         <b>Stop ID:</b> 34116         </div>`)[0];
+                popup_6c13b6929d3153f43b090649510ffe21.setContent(html_9da6b58104293c49d32ab4368283e233);
+            
+        
+
+        marker_0193a20a483d3f2b25cc2d82bf969605.bindPopup(popup_6c13b6929d3153f43b090649510ffe21)
+        ;
+
+        
+    
+    
+            var marker_f7fd6557639bb52e7d63d6e0624f9bea = L.marker(
+                [39.748064, -104.990319],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_47814284ae148e6ef8aeabf47f22c9fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f7fd6557639bb52e7d63d6e0624f9bea.setIcon(icon_47814284ae148e6ef8aeabf47f22c9fa);
+        
+    
+        var popup_614f900924e803171fabea154b25975f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0ea37689a0fb93fda46dfdc6238509cd = $(`<div id="html_0ea37689a0fb93fda46dfdc6238509cd" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 18th St / Stout Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> D-H-L<br>         <b>Address:</b> 1816 Stout St<br>         <b>Parcel ID:</b> Stop#: 23055<br>         <b>Location:</b> 18th St & Stout<br>         <b>Rail Line:</b> D-H-L<br>         <b>Stop ID:</b> 34117         </div>`)[0];
+                popup_614f900924e803171fabea154b25975f.setContent(html_0ea37689a0fb93fda46dfdc6238509cd);
+            
+        
+
+        marker_f7fd6557639bb52e7d63d6e0624f9bea.bindPopup(popup_614f900924e803171fabea154b25975f)
+        ;
+
+        
+    
+    
+            var marker_55007bed8a3f8fa182a07f152810b8aa = L.marker(
+                [39.748163, -104.986671],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_418d8f75fca64e1cf171a7937e5ea4c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_55007bed8a3f8fa182a07f152810b8aa.setIcon(icon_418d8f75fca64e1cf171a7937e5ea4c6);
+        
+    
+        var popup_c405a2d8b4f566866eeb8a77550449e4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eb54317645283c7b351ce43953a8b9b5 = $(`<div id="html_eb54317645283c7b351ce43953a8b9b5" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 20th St / Welton Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> L<br>         <b>Address:</b> 1960 Welton St<br>         <b>Parcel ID:</b> Stop#: 23054 (South)<br />Stop#: 23048 (North)<br>         <b>Location:</b> 20th St & Welton<br>         <b>Rail Line:</b> L<br>         <b>Stop ID:</b> 34118         </div>`)[0];
+                popup_c405a2d8b4f566866eeb8a77550449e4.setContent(html_eb54317645283c7b351ce43953a8b9b5);
+            
+        
+
+        marker_55007bed8a3f8fa182a07f152810b8aa.bindPopup(popup_c405a2d8b4f566866eeb8a77550449e4)
+        ;
+
+        
+    
+    
+            var marker_94bc2a202abb410c4cceb44883a74bfb = L.marker(
+                [39.753121, -104.980105],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_46ee3b1ff214063de634aa91785810c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_94bc2a202abb410c4cceb44883a74bfb.setIcon(icon_46ee3b1ff214063de634aa91785810c9);
+        
+    
+        var popup_2b8f0f850ad9e37f07928aeaf3ba14dd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_56269eefcd3db0287f782687556b58c9 = $(`<div id="html_56269eefcd3db0287f782687556b58c9" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 25th St / Welton Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> L<br>         <b>Address:</b> 2550 Welton St<br>         <b>Parcel ID:</b> Stop#: 23053 (South)<br />Stop#: 23049 (North)<br>         <b>Location:</b> 25th St & Welton<br>         <b>Rail Line:</b> L<br>         <b>Stop ID:</b> 34119         </div>`)[0];
+                popup_2b8f0f850ad9e37f07928aeaf3ba14dd.setContent(html_56269eefcd3db0287f782687556b58c9);
+            
+        
+
+        marker_94bc2a202abb410c4cceb44883a74bfb.bindPopup(popup_2b8f0f850ad9e37f07928aeaf3ba14dd)
+        ;
+
+        
+    
+    
+            var marker_08928bd623ad37752dbd30215e0c804f = L.marker(
+                [39.755133, -104.977487],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_66ba26874adc7e10f1e521428bdb00a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_08928bd623ad37752dbd30215e0c804f.setIcon(icon_66ba26874adc7e10f1e521428bdb00a3);
+        
+    
+        var popup_50bd0d1287f655fb1df207a8595162ab = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_587363699fca07a7429c9a112f28ad5f = $(`<div id="html_587363699fca07a7429c9a112f28ad5f" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 27th St / Welton Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> L<br>         <b>Address:</b> 2720 Welton St<br>         <b>Parcel ID:</b> Stop#: 23709 (South)<br />Stop#: 23708 (North)<br>         <b>Location:</b> 27th St & Welton<br>         <b>Rail Line:</b> L<br>         <b>Stop ID:</b> 34120         </div>`)[0];
+                popup_50bd0d1287f655fb1df207a8595162ab.setContent(html_587363699fca07a7429c9a112f28ad5f);
+            
+        
+
+        marker_08928bd623ad37752dbd30215e0c804f.bindPopup(popup_50bd0d1287f655fb1df207a8595162ab)
+        ;
+
+        
+    
+    
+            var marker_896ab24f5ff8d09b89bfc4298e79d9ea = L.marker(
+                [39.737418, -105.024806],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_198e63ab69175a047936de418af69c69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_896ab24f5ff8d09b89bfc4298e79d9ea.setIcon(icon_198e63ab69175a047936de418af69c69);
+        
+    
+        var popup_8f8985768cf7e673fd103565c3c2e00f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3a63c091f796e45eef86247311b8c2b7 = $(`<div id="html_3a63c091f796e45eef86247311b8c2b7" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Decatur-Federal Station<br>         <b>Local Routes:</b> 15L-16-30-31<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 1310 N Federal Blvd<br>         <b>Parcel ID:</b> Stop#: 33958 (East)<br />Stop#: 33558 (West)<br>         <b>Location:</b> Colfax & Federal<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 34232         </div>`)[0];
+                popup_8f8985768cf7e673fd103565c3c2e00f.setContent(html_3a63c091f796e45eef86247311b8c2b7);
+            
+        
+
+        marker_896ab24f5ff8d09b89bfc4298e79d9ea.bindPopup(popup_8f8985768cf7e673fd103565c3c2e00f)
+        ;
+
+        
+    
+    
+            var marker_7549e0a6257948ab050f6a9257a2e942 = L.marker(
+                [39.735434, -105.03288],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_af0e4d087d6aec3141a2b424e1994654 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7549e0a6257948ab050f6a9257a2e942.setIcon(icon_af0e4d087d6aec3141a2b424e1994654);
+        
+    
+        var popup_498553649ac98beeb611d296e1fa5407 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1ce52288672ec30be87bc58ac8cdd1d0 = $(`<div id="html_1ce52288672ec30be87bc58ac8cdd1d0" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Knox Station<br>         <b>Local Routes:</b> 1<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 1245 N Knox Ct<br>         <b>Parcel ID:</b> Stop#: 33941 (East)<br />Stop#: 33559 (West)<br>         <b>Location:</b> Knox & 12th Ave<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 34233         </div>`)[0];
+                popup_498553649ac98beeb611d296e1fa5407.setContent(html_1ce52288672ec30be87bc58ac8cdd1d0);
+            
+        
+
+        marker_7549e0a6257948ab050f6a9257a2e942.bindPopup(popup_498553649ac98beeb611d296e1fa5407)
+        ;
+
+        
+    
+    
+            var marker_f353c8c5320abe2816bea4152094fdbe = L.marker(
+                [39.734568, -105.040036],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_2a685863aef3b463eb83d4efb360ee90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f353c8c5320abe2816bea4152094fdbe.setIcon(icon_2a685863aef3b463eb83d4efb360ee90);
+        
+    
+        var popup_55de9c58fab051b321f162b1061c78c3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b0c9ba8520d319a9600985b1519b34a6 = $(`<div id="html_b0c9ba8520d319a9600985b1519b34a6" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Perry Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 1199 N Perry St<br>         <b>Parcel ID:</b> Stop#: 33965 (East)<br />Stop#: 33560 (West)<br>         <b>Location:</b> Perry & 12th Ave<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 34234         </div>`)[0];
+                popup_55de9c58fab051b321f162b1061c78c3.setContent(html_b0c9ba8520d319a9600985b1519b34a6);
+            
+        
+
+        marker_f353c8c5320abe2816bea4152094fdbe.bindPopup(popup_55de9c58fab051b321f162b1061c78c3)
+        ;
+
+        
+    
+    
+            var marker_40577d3293d499298cb8a6c2fa6b1a53 = L.marker(
+                [39.735028, -105.053634],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_4db2e5095744adb25fa79ede77e3ec37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_40577d3293d499298cb8a6c2fa6b1a53.setIcon(icon_4db2e5095744adb25fa79ede77e3ec37);
+        
+    
+        var popup_4cda4847ad06d31fec62fa419f26970c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b112e4d99470a51344142b34575a9373 = $(`<div id="html_b112e4d99470a51344142b34575a9373" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Sheridan Station<br>         <b>Local Routes:</b> 51<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 1198 Sheridan Blvd<br>         <b>Parcel ID:</b> Stop#: 33967 (East)<br />Stop#: 33561 (West)<br>         <b>Location:</b> Sheridan & 14th Ave<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 34235         </div>`)[0];
+                popup_4cda4847ad06d31fec62fa419f26970c.setContent(html_b112e4d99470a51344142b34575a9373);
+            
+        
+
+        marker_40577d3293d499298cb8a6c2fa6b1a53.bindPopup(popup_4cda4847ad06d31fec62fa419f26970c)
+        ;
+
+        
+    
+    
+            var marker_4a1c14816215982e90a53a381d9ad6e0 = L.marker(
+                [39.736672, -105.066483],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_76e90ae73860c4f9d524b35c59196b44 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4a1c14816215982e90a53a381d9ad6e0.setIcon(icon_76e90ae73860c4f9d524b35c59196b44);
+        
+    
+        var popup_a95f8408c4f70ce8df955434b4b0461f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a60a5a8f8ae72db4a040d51539ea758c = $(`<div id="html_a60a5a8f8ae72db4a040d51539ea758c" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Lamar Station<br>         <b>Local Routes:</b> 9<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 6363 W 13th Ave<br>         <b>Parcel ID:</b> Stop#: 33959 (East)<br />Stop#: 33562 (West)<br>         <b>Location:</b> Lamar & 13th Ave<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 34236         </div>`)[0];
+                popup_a95f8408c4f70ce8df955434b4b0461f.setContent(html_a60a5a8f8ae72db4a040d51539ea758c);
+            
+        
+
+        marker_4a1c14816215982e90a53a381d9ad6e0.bindPopup(popup_a95f8408c4f70ce8df955434b4b0461f)
+        ;
+
+        
+    
+    
+            var marker_8e01fcf0bb438f7ceca6436b366be6d5 = L.marker(
+                [39.736884, -105.081096],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_e3bb9fc434b68b7f585423e443b3614d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8e01fcf0bb438f7ceca6436b366be6d5.setIcon(icon_e3bb9fc434b68b7f585423e443b3614d);
+        
+    
+        var popup_fafc754595566f2686977db3128b1ad3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f1310bfce0eee85258980f506a9fdaba = $(`<div id="html_f1310bfce0eee85258980f506a9fdaba" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Lakewood-Wadsworth Station<br>         <b>Local Routes:</b> 9-76<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 1298 Wadsworth Blvd<br>         <b>Parcel ID:</b> Stop#: 33970 (East)<br />Stop#: 33563 (West)<br>         <b>Location:</b> Wadsworth & 13th Ave<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 34237         </div>`)[0];
+                popup_fafc754595566f2686977db3128b1ad3.setContent(html_f1310bfce0eee85258980f506a9fdaba);
+            
+        
+
+        marker_8e01fcf0bb438f7ceca6436b366be6d5.bindPopup(popup_fafc754595566f2686977db3128b1ad3)
+        ;
+
+        
+    
+    
+            var marker_e34ef9f0c51fdb8ee7d9911a66eb22d3 = L.marker(
+                [39.736531, -105.099528],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_6e59bc3abb8111f546d3f6c1c81bcc8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e34ef9f0c51fdb8ee7d9911a66eb22d3.setIcon(icon_6e59bc3abb8111f546d3f6c1c81bcc8f);
+        
+    
+        var popup_54f763ed18b12cca57aaadeeb67494b3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8d419dc8af82a52e01be8f0e3cbeb422 = $(`<div id="html_8d419dc8af82a52e01be8f0e3cbeb422" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Garrison Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 9091 W 13th Ave<br>         <b>Parcel ID:</b> Stop#: 33957 (East)<br />Stop#: 33564 (West)<br>         <b>Location:</b> Garrison & 13th Ave<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 34238         </div>`)[0];
+                popup_54f763ed18b12cca57aaadeeb67494b3.setContent(html_8d419dc8af82a52e01be8f0e3cbeb422);
+            
+        
+
+        marker_e34ef9f0c51fdb8ee7d9911a66eb22d3.bindPopup(popup_54f763ed18b12cca57aaadeeb67494b3)
+        ;
+
+        
+    
+    
+            var marker_846e18addee0ae8e42cad61fb1f36f3a = L.marker(
+                [39.737381, -105.119365],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_8db907749e73fea4b9bcbd45f533f63b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_846e18addee0ae8e42cad61fb1f36f3a.setIcon(icon_8db907749e73fea4b9bcbd45f533f63b);
+        
+    
+        var popup_7b3160a13c5477708cb9fc15dd2585f8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ffe9bbfd5f8c49c4d9504dff0e2371b4 = $(`<div id="html_ffe9bbfd5f8c49c4d9504dff0e2371b4" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Oak Station<br>         <b>Local Routes:</b> 16<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 1311 Oak St<br>         <b>Parcel ID:</b> Stop#: 33960 (East)<br />Stop#: 33565 (West)<br>         <b>Location:</b> Oak & Colfax<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 34239         </div>`)[0];
+                popup_7b3160a13c5477708cb9fc15dd2585f8.setContent(html_ffe9bbfd5f8c49c4d9504dff0e2371b4);
+            
+        
+
+        marker_846e18addee0ae8e42cad61fb1f36f3a.bindPopup(popup_7b3160a13c5477708cb9fc15dd2585f8)
+        ;
+
+        
+    
+    
+            var marker_3ebf253083654f3f21c1d5f30a7a3452 = L.marker(
+                [39.724954, -105.149955],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_bee16cd14ef8d3f73725a3058903df15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3ebf253083654f3f21c1d5f30a7a3452.setIcon(icon_bee16cd14ef8d3f73725a3058903df15);
+        
+    
+        var popup_91e48582c72dce21e192f03923aec421 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5a0fc085e0dfed72a944ceed1035b5fc = $(`<div id="html_5a0fc085e0dfed72a944ceed1035b5fc" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Red Rocks College Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 13400 W 6th Ave<br>         <b>Parcel ID:</b> Stop#: 33966 (East)<br />Stop#: 33567 (West)<br>         <b>Location:</b> 6th Ave & Arbutus<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 34240         </div>`)[0];
+                popup_91e48582c72dce21e192f03923aec421.setContent(html_5a0fc085e0dfed72a944ceed1035b5fc);
+            
+        
+
+        marker_3ebf253083654f3f21c1d5f30a7a3452.bindPopup(popup_91e48582c72dce21e192f03923aec421)
+        ;
+
+        
+    
+    
+            var marker_1882ce64d3cad43d8589533bc62d627a = L.marker(
+                [39.726354, -105.199734],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_c7b19d510e1493611169b3b3f1b89354 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1882ce64d3cad43d8589533bc62d627a.setIcon(icon_c7b19d510e1493611169b3b3f1b89354);
+        
+    
+        var popup_4e6e98231a3f95f84629214917d6447a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ce158fed255dbda234e7325d82783214 = $(`<div id="html_ce158fed255dbda234e7325d82783214" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Jefferson CO Government-Golden Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> W<br>         <b>Address:</b> 605 Johnson Rd<br>         <b>Parcel ID:</b> Stop#: 33948<br>         <b>Location:</b> 6th Ave & Johnson<br>         <b>Rail Line:</b> W<br>         <b>Stop ID:</b> 34241         </div>`)[0];
+                popup_4e6e98231a3f95f84629214917d6447a.setContent(html_ce158fed255dbda234e7325d82783214);
+            
+        
+
+        marker_1882ce64d3cad43d8589533bc62d627a.bindPopup(popup_4e6e98231a3f95f84629214917d6447a)
+        ;
+
+        
+    
+    
+            var marker_90e2a49305a407bff3fca859b41b694f = L.marker(
+                [39.775841, -104.944754],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_042648e1b534f94475a9dfc0c60ac363 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_90e2a49305a407bff3fca859b41b694f.setIcon(icon_042648e1b534f94475a9dfc0c60ac363);
+        
+    
+        var popup_c9e36b0c32b48bda4b39217f6271f712 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a057897cd9f5e7a1a21f815a7bbd34a0 = $(`<div id="html_a057897cd9f5e7a1a21f815a7bbd34a0" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 40th / Colorado Station<br>         <b>Local Routes:</b> 24-37-40-44-49<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> A<br>         <b>Address:</b> 4220 Garfield St<br>         <b>Parcel ID:</b> Stop#: 34467 (East)<br />Stop#: 34468 (West)<br>         <b>Location:</b> 40th Ave & Colorado Blvd<br>         <b>Rail Line:</b> A<br>         <b>Stop ID:</b> 34500         </div>`)[0];
+                popup_c9e36b0c32b48bda4b39217f6271f712.setContent(html_a057897cd9f5e7a1a21f815a7bbd34a0);
+            
+        
+
+        marker_90e2a49305a407bff3fca859b41b694f.bindPopup(popup_c9e36b0c32b48bda4b39217f6271f712)
+        ;
+
+        
+    
+    
+            var marker_ce4cc27737274565626ea4177ad0bbb7 = L.marker(
+                [39.769723, -104.892912],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_319a41e2831fc246ca86d9fd49157b9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ce4cc27737274565626ea4177ad0bbb7.setIcon(icon_319a41e2831fc246ca86d9fd49157b9b);
+        
+    
+        var popup_bea39682b1ed46807bc848bb61e5e5d6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_691c19b1b86842970edc5167763644cf = $(`<div id="html_691c19b1b86842970edc5167763644cf" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Central Park Station<br>         <b>Local Routes:</b> 28-34-37-42-43-65-73-88-105<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> A<br>         <b>Address:</b> 8200 Smith Rd<br>         <b>Parcel ID:</b> Stop#: 34469 (East)<br />Stop#: 34470 (West)<br>         <b>Location:</b> Central Park Blvd & Smith Rd<br>         <b>Rail Line:</b> A<br>         <b>Stop ID:</b> 34501         </div>`)[0];
+                popup_bea39682b1ed46807bc848bb61e5e5d6.setContent(html_691c19b1b86842970edc5167763644cf);
+            
+        
+
+        marker_ce4cc27737274565626ea4177ad0bbb7.bindPopup(popup_bea39682b1ed46807bc848bb61e5e5d6)
+        ;
+
+        
+    
+    
+            var marker_002405a1672a3fcc4b0e5213e38d9ff7 = L.marker(
+                [39.766094, -104.852057],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_eea40852892d87961114e00a25dbcbc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_002405a1672a3fcc4b0e5213e38d9ff7.setIcon(icon_eea40852892d87961114e00a25dbcbc1);
+        
+    
+        var popup_fadcbe32c5d7d3fea6ebb868693880ad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_68ad61399a0b3761b7c695d7e8a9f530 = $(`<div id="html_68ad61399a0b3761b7c695d7e8a9f530" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Peoria Station<br>         <b>Local Routes:</b> 37-45-121-153<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> R-A<br>         <b>Address:</b> 11501 E 33rd Ave<br>         <b>Parcel ID:</b> Stop#: 34471 (East)<br />Stop#: 34472 (West)<br>         <b>Location:</b> 33rd & Peoria<br>         <b>Rail Line:</b> R-A<br>         <b>Stop ID:</b> 34502         </div>`)[0];
+                popup_fadcbe32c5d7d3fea6ebb868693880ad.setContent(html_68ad61399a0b3761b7c695d7e8a9f530);
+            
+        
+
+        marker_002405a1672a3fcc4b0e5213e38d9ff7.bindPopup(popup_fadcbe32c5d7d3fea6ebb868693880ad)
+        ;
+
+        
+    
+    
+            var marker_5e5511499ccd5b566fcfd5828e616140 = L.marker(
+                [39.847913, -104.673943],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_00aa0b4e308ab44b745f283ed49948cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5e5511499ccd5b566fcfd5828e616140.setIcon(icon_00aa0b4e308ab44b745f283ed49948cf);
+        
+    
+        var popup_2d4c44588dbea9e806c5653be9c88e4d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5d7b57888ae5d3ad9e67a4c7396a60a2 = $(`<div id="html_5d7b57888ae5d3ad9e67a4c7396a60a2" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Denver Airport Station<br>         <b>Local Routes:</b> 104L-169L<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> 145X<br>         <b>SkyRide Routes:</b> AB1-AT-ATA<br>         <b>Special Routes:</b> A<br>         <b>Address:</b> 26800 E 84th Ave<br>         <b>Parcel ID:</b> Stop#: 34476<br>         <b>Location:</b> DIA<br>         <b>Rail Line:</b> A<br>         <b>Stop ID:</b> 34503         </div>`)[0];
+                popup_2d4c44588dbea9e806c5653be9c88e4d.setContent(html_5d7b57888ae5d3ad9e67a4c7396a60a2);
+            
+        
+
+        marker_5e5511499ccd5b566fcfd5828e616140.bindPopup(popup_2d4c44588dbea9e806c5653be9c88e4d)
+        ;
+
+        
+    
+    
+            var marker_651c5466a3a93d21c678aaf31c3049af = L.marker(
+                [39.789544, -105.13327],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_f780171285e4c418f0fd6b02ab80b4a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_651c5466a3a93d21c678aaf31c3049af.setIcon(icon_f780171285e4c418f0fd6b02ab80b4a4);
+        
+    
+        var popup_41e370761127072d2a9d9126de36ddc1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_60d3cb5880f93137004c7e2a384d9d7f = $(`<div id="html_60d3cb5880f93137004c7e2a384d9d7f" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Wheat Ridge / Ward Road Station<br>         <b>Local Routes:</b> 38-44<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> G<br>         <b>Address:</b> 12000 Ridge Road<br>         <b>Parcel ID:</b> Stop#: 34510 (East)<br />Stop#: 34511 (West)<br>         <b>Location:</b> W Ridge Road & Tabor St<br>         <b>Rail Line:</b> G<br>         <b>Stop ID:</b> 34504         </div>`)[0];
+                popup_41e370761127072d2a9d9126de36ddc1.setContent(html_60d3cb5880f93137004c7e2a384d9d7f);
+            
+        
+
+        marker_651c5466a3a93d21c678aaf31c3049af.bindPopup(popup_41e370761127072d2a9d9126de36ddc1)
+        ;
+
+        
+    
+    
+            var marker_51f41347210f24baf63774681654c393 = L.marker(
+                [39.791993, -105.110976],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_9895105e84bdccfb1b9bcb1e13aa0669 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_51f41347210f24baf63774681654c393.setIcon(icon_9895105e84bdccfb1b9bcb1e13aa0669);
+        
+    
+        var popup_55a55f2172deb0a567d8df40510f093b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_32499ebe87ed4213685a00ebd35e5f26 = $(`<div id="html_32499ebe87ed4213685a00ebd35e5f26" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Arvada Ridge Station<br>         <b>Local Routes:</b> 100<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> G<br>         <b>Address:</b> 10189 W 53rd Ave<br>         <b>Parcel ID:</b> Stop#: 34519 (East)<br />Stop#: 34520 (West)<br>         <b>Location:</b> Kipling Ct & W 51st Pl<br>         <b>Rail Line:</b> G<br>         <b>Stop ID:</b> 34505         </div>`)[0];
+                popup_55a55f2172deb0a567d8df40510f093b.setContent(html_32499ebe87ed4213685a00ebd35e5f26);
+            
+        
+
+        marker_51f41347210f24baf63774681654c393.bindPopup(popup_55a55f2172deb0a567d8df40510f093b)
+        ;
+
+        
+    
+    
+            var marker_179f303bc39c660a682a970bd3d0ca9a = L.marker(
+                [39.804374, -105.049081],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_c28c01dabe6a346dab5b2297b0a7587d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_179f303bc39c660a682a970bd3d0ca9a.setIcon(icon_c28c01dabe6a346dab5b2297b0a7587d);
+        
+    
+        var popup_25e2242fa370e2cd2363179d9feee091 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_023c86b52932498ad50ff8a3cd723506 = $(`<div id="html_023c86b52932498ad50ff8a3cd723506" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 60th/Sheridan-Arvada Gold Strike Station<br>         <b>Local Routes:</b> 51<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> G<br>         <b>Address:</b> 5980 Sheridan Blvd<br>         <b>Parcel ID:</b> Stop#: 34525 (East)<br />Stop#: 34526 (West)<br>         <b>Location:</b> W 60th Ave & Wolff St<br>         <b>Rail Line:</b> G<br>         <b>Stop ID:</b> 34506         </div>`)[0];
+                popup_25e2242fa370e2cd2363179d9feee091.setContent(html_023c86b52932498ad50ff8a3cd723506);
+            
+        
+
+        marker_179f303bc39c660a682a970bd3d0ca9a.bindPopup(popup_25e2242fa370e2cd2363179d9feee091)
+        ;
+
+        
+    
+    
+            var marker_a2ca7242942c4d0174ddf940ba590ce2 = L.marker(
+                [39.804819, -105.022624],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_4add3b154f738a0c44dda63d7b771133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a2ca7242942c4d0174ddf940ba590ce2.setIcon(icon_4add3b154f738a0c44dda63d7b771133);
+        
+    
+        var popup_8a2ee50e111399edd89cbee2cfc8b631 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b5aeaf2db29a2b2f0700e48dc2718f9 = $(`<div id="html_4b5aeaf2db29a2b2f0700e48dc2718f9" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Clear Creek / Federal Station<br>         <b>Local Routes:</b> 31<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> G<br>         <b>Address:</b> 2870 W 60th Ave<br>         <b>Parcel ID:</b> Stop#: 34529 (East)<br />Stop#: 34530 (West)<br>         <b>Location:</b> Federal Blvd & W 60th Ave<br>         <b>Rail Line:</b> G<br>         <b>Stop ID:</b> 34507         </div>`)[0];
+                popup_8a2ee50e111399edd89cbee2cfc8b631.setContent(html_4b5aeaf2db29a2b2f0700e48dc2718f9);
+            
+        
+
+        marker_a2ca7242942c4d0174ddf940ba590ce2.bindPopup(popup_8a2ee50e111399edd89cbee2cfc8b631)
+        ;
+
+        
+    
+    
+            var marker_c1616f8aed62a6c143b2ca02b345499e = L.marker(
+                [39.805421, -105.003505],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_53e0f3aca0e2dacd52ac6c39b7bd53b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c1616f8aed62a6c143b2ca02b345499e.setIcon(icon_53e0f3aca0e2dacd52ac6c39b7bd53b2);
+        
+    
+        var popup_a83b110dcb13a255052824983d0fd12b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_290b0b0de30ebad88323d71681a34044 = $(`<div id="html_290b0b0de30ebad88323d71681a34044" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Pecos Junction Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> B-G<br>         <b>Address:</b> 6096 Pecos St<br>         <b>Parcel ID:</b> Stop#: 34543 (East)<br />Stop#: 34544 (West)<br>         <b>Location:</b> Pecos St & W 62nd Ave<br>         <b>Rail Line:</b> B-G<br>         <b>Stop ID:</b> 34508         </div>`)[0];
+                popup_a83b110dcb13a255052824983d0fd12b.setContent(html_290b0b0de30ebad88323d71681a34044);
+            
+        
+
+        marker_c1616f8aed62a6c143b2ca02b345499e.bindPopup(popup_a83b110dcb13a255052824983d0fd12b)
+        ;
+
+        
+    
+    
+            var marker_a0d23cf2a8b21f238ffca93e7ca0a068 = L.marker(
+                [39.772741, -104.995362],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_fc89c548fa7bb0e4c9adb4bea96b09e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a0d23cf2a8b21f238ffca93e7ca0a068.setIcon(icon_fc89c548fa7bb0e4c9adb4bea96b09e7);
+        
+    
+        var popup_9b4037d0ba7f87f8f7941a667a486f58 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c898f246a0d750d59e4d733d76759a72 = $(`<div id="html_c898f246a0d750d59e4d733d76759a72" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 41st / Fox Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> B-G<br>         <b>Address:</b> 4105 N Fox St<br>         <b>Parcel ID:</b> Stop#: 34559 (East)<br />Stop#: 34558 (West)<br>         <b>Location:</b> W 41st Ave & Fox St<br>         <b>Rail Line:</b> B-G<br>         <b>Stop ID:</b> 34548         </div>`)[0];
+                popup_9b4037d0ba7f87f8f7941a667a486f58.setContent(html_c898f246a0d750d59e4d733d76759a72);
+            
+        
+
+        marker_a0d23cf2a8b21f238ffca93e7ca0a068.bindPopup(popup_9b4037d0ba7f87f8f7941a667a486f58)
+        ;
+
+        
+    
+    
+            var marker_696bbbf46f507f7f1cffd781551d6a75 = L.marker(
+                [39.823124, -105.027939],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_758e33ae69c19ca33cfb1494e78d31b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_696bbbf46f507f7f1cffd781551d6a75.setIcon(icon_758e33ae69c19ca33cfb1494e78d31b0);
+        
+    
+        var popup_7f0e47209ae6968b80b153cce48559a6 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_894b346667fc5dd7a044b5a18eb5a12e = $(`<div id="html_894b346667fc5dd7a044b5a18eb5a12e" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Westminster Station<br>         <b>Local Routes:</b> 31-72<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> B<br>         <b>Address:</b> 6995 Grove Street<br>         <b>Parcel ID:</b> Stop#: 34560 (South)<br />Stop#: 34561 (North)<br>         <b>Location:</b> Federal Blvd & W 71st Ave<br>         <b>Rail Line:</b> B<br>         <b>Stop ID:</b> 34549         </div>`)[0];
+                popup_7f0e47209ae6968b80b153cce48559a6.setContent(html_894b346667fc5dd7a044b5a18eb5a12e);
+            
+        
+
+        marker_696bbbf46f507f7f1cffd781551d6a75.bindPopup(popup_7f0e47209ae6968b80b153cce48559a6)
+        ;
+
+        
+    
+    
+            var marker_3eed209fadf9cf7f930ef9f4eb7576d8 = L.marker(
+                [39.673511, -104.826044],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_993c14e2192b2912114267b1d9ff3ae6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3eed209fadf9cf7f930ef9f4eb7576d8.setIcon(icon_993c14e2192b2912114267b1d9ff3ae6);
+        
+    
+        var popup_555ad45b39eb7320ffb1328b28487bd4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dd0e0eb7e67ed6a1eb3824b2a243f11b = $(`<div id="html_dd0e0eb7e67ed6a1eb3824b2a243f11b" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Iliff Station<br>         <b>Local Routes:</b> 21<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> H-R<br>         <b>Address:</b> 14030 E Iliff Ave<br>         <b>Parcel ID:</b> Stop#: 34575 (South)<br />Stop#: 34574 (North)<br>         <b>Location:</b> Iliff & Blackhawk<br>         <b>Rail Line:</b> H-R<br>         <b>Stop ID:</b> 34677         </div>`)[0];
+                popup_555ad45b39eb7320ffb1328b28487bd4.setContent(html_dd0e0eb7e67ed6a1eb3824b2a243f11b);
+            
+        
+
+        marker_3eed209fadf9cf7f930ef9f4eb7576d8.bindPopup(popup_555ad45b39eb7320ffb1328b28487bd4)
+        ;
+
+        
+    
+    
+            var marker_c6ef206f99943472a3dd8a3c28b3f167 = L.marker(
+                [39.709069, -104.818422],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_c47beba4502f05d454bfd423e2684e73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c6ef206f99943472a3dd8a3c28b3f167.setIcon(icon_c47beba4502f05d454bfd423e2684e73);
+        
+    
+        var popup_9fe6db97ab40bf66092ca39f6f3f64ed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5033883687867bd6d5f1e54a7facd460 = $(`<div id="html_5033883687867bd6d5f1e54a7facd460" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Aurora Metro Center Station<br>         <b>Local Routes:</b> 3-3L-6-11-15L-21-130-133-153<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> R<br>         <b>Address:</b> 14555 E Centrepoint Dr<br>         <b>Parcel ID:</b> Stop#: 34580 (South)<br />Stop#: 34579 (North)<br>         <b>Location:</b> Centrepoint & Sable<br>         <b>Rail Line:</b> R<br>         <b>Stop ID:</b> 34678         </div>`)[0];
+                popup_9fe6db97ab40bf66092ca39f6f3f64ed.setContent(html_5033883687867bd6d5f1e54a7facd460);
+            
+        
+
+        marker_c6ef206f99943472a3dd8a3c28b3f167.bindPopup(popup_9fe6db97ab40bf66092ca39f6f3f64ed)
+        ;
+
+        
+    
+    
+            var marker_a12899a5646a6909e14867bea34c1fc7 = L.marker(
+                [39.689917, -104.828099],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_fb2a1a0bb839277b3c2e1a47b48032ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a12899a5646a6909e14867bea34c1fc7.setIcon(icon_fb2a1a0bb839277b3c2e1a47b48032ab);
+        
+    
+        var popup_6300839e274e5c31c5d2c665330d5efe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f2d655293a68071390997f68883f136f = $(`<div id="html_f2d655293a68071390997f68883f136f" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Florida Station<br>         <b>Local Routes:</b> 11<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> H-R<br>         <b>Address:</b> 1490 S Abilene St<br>         <b>Parcel ID:</b> Stop#: 34578 (South)<br />Stop#: 34577 (North)<br>         <b>Location:</b> Florida & Abilene<br>         <b>Rail Line:</b> H-R<br>         <b>Stop ID:</b> 34679         </div>`)[0];
+                popup_6300839e274e5c31c5d2c665330d5efe.setContent(html_f2d655293a68071390997f68883f136f);
+            
+        
+
+        marker_a12899a5646a6909e14867bea34c1fc7.bindPopup(popup_6300839e274e5c31c5d2c665330d5efe)
+        ;
+
+        
+    
+    
+            var marker_d1e431716a77b8084ce7a7a3bdadea01 = L.marker(
+                [39.719484, -104.825073],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_b3d75d8d51626fe12ec796a95e71f8e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d1e431716a77b8084ce7a7a3bdadea01.setIcon(icon_b3d75d8d51626fe12ec796a95e71f8e5);
+        
+    
+        var popup_424f7a4726bca6fda7940aa55f5ce3c9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1deba8f43cda909eece0377cf76317d3 = $(`<div id="html_1deba8f43cda909eece0377cf76317d3" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 2nd Ave / Abilene Station<br>         <b>Local Routes:</b> 6<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> R<br>         <b>Address:</b> 14051 E Ellsworth Ave<br>         <b>Parcel ID:</b> Stop#: 34582 (South)<br />Stop#: 34581 (North)<br>         <b>Location:</b> 2nd Ave & Abilene<br>         <b>Rail Line:</b> R<br>         <b>Stop ID:</b> 34680         </div>`)[0];
+                popup_424f7a4726bca6fda7940aa55f5ce3c9.setContent(html_1deba8f43cda909eece0377cf76317d3);
+            
+        
+
+        marker_d1e431716a77b8084ce7a7a3bdadea01.bindPopup(popup_424f7a4726bca6fda7940aa55f5ce3c9)
+        ;
+
+        
+    
+    
+            var marker_b319874d3851a0ed82da651c7d654a53 = L.marker(
+                [39.734452, -104.824601],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_66447d9a759758db2dc44d2226186180 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b319874d3851a0ed82da651c7d654a53.setIcon(icon_66447d9a759758db2dc44d2226186180);
+        
+    
+        var popup_24a98547e25a0f5b7be6eb756963cccb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6ced2cd6b0ccf0db0a20795197334f67 = $(`<div id="html_6ced2cd6b0ccf0db0a20795197334f67" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 13th Avenue Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> R<br>         <b>Address:</b> 14110 E 13th Ave<br>         <b>Parcel ID:</b> Stop#: 34584 (South)<br />Stop#: 34583 (North)<br>         <b>Location:</b> 13th Ave & Cimarron Cir<br>         <b>Rail Line:</b> R<br>         <b>Stop ID:</b> 34681         </div>`)[0];
+                popup_24a98547e25a0f5b7be6eb756963cccb.setContent(html_6ced2cd6b0ccf0db0a20795197334f67);
+            
+        
+
+        marker_b319874d3851a0ed82da651c7d654a53.bindPopup(popup_24a98547e25a0f5b7be6eb756963cccb)
+        ;
+
+        
+    
+    
+            var marker_ae2144565296ae0a51fa210abe857bbf = L.marker(
+                [39.74083, -104.826398],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_d782d014268603388333de0ad5d3ea1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ae2144565296ae0a51fa210abe857bbf.setIcon(icon_d782d014268603388333de0ad5d3ea1c);
+        
+    
+        var popup_f3d8ba1af578421da214cfdd744f4d12 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a4615e98e4cb2224d2b6939d495a2b38 = $(`<div id="html_a4615e98e4cb2224d2b6939d495a2b38" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Colfax Station<br>         <b>Local Routes:</b> 15-15L-20<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> FF5<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> R<br>         <b>Address:</b> 13800 E Colfax Ave<br>         <b>Parcel ID:</b> Stop#: 34586 (South)<br />Stop#: 34585 (North)<br>         <b>Location:</b> Colfax & I-225<br>         <b>Rail Line:</b> R<br>         <b>Stop ID:</b> 34682         </div>`)[0];
+                popup_f3d8ba1af578421da214cfdd744f4d12.setContent(html_a4615e98e4cb2224d2b6939d495a2b38);
+            
+        
+
+        marker_ae2144565296ae0a51fa210abe857bbf.bindPopup(popup_f3d8ba1af578421da214cfdd744f4d12)
+        ;
+
+        
+    
+    
+            var marker_13b9e9c328def65623ba2242225a4731 = L.marker(
+                [39.755018, -104.838018],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_393d090a0e6edbaf110b938a1f005faf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_13b9e9c328def65623ba2242225a4731.setIcon(icon_393d090a0e6edbaf110b938a1f005faf);
+        
+    
+        var popup_9fd522f5726afbf10a696f9812e97093 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_827651692719c8bf2cff8624fee8d9d3 = $(`<div id="html_827651692719c8bf2cff8624fee8d9d3" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Fitzsimons Station<br>         <b>Local Routes:</b> SHUZ<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> R<br>         <b>Address:</b> 2550 N Fitzsimons Pkwy<br>         <b>Parcel ID:</b> Stop#: 34588 (South)<br />Stop#: 34587 (North)<br>         <b>Location:</b> Fitzsimons & Peoria<br>         <b>Rail Line:</b> R<br>         <b>Stop ID:</b> 34683         </div>`)[0];
+                popup_9fd522f5726afbf10a696f9812e97093.setContent(html_827651692719c8bf2cff8624fee8d9d3);
+            
+        
+
+        marker_13b9e9c328def65623ba2242225a4731.bindPopup(popup_9fd522f5726afbf10a696f9812e97093)
+        ;
+
+        
+    
+    
+            var marker_b61fad9bc3070a9a92e22b237dcea5e7 = L.marker(
+                [39.770729, -104.9734],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_5561a4873f98bb8fffd064437b6c370d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b61fad9bc3070a9a92e22b237dcea5e7.setIcon(icon_5561a4873f98bb8fffd064437b6c370d);
+        
+    
+        var popup_d211712fe4dde4da6fedb7128665a1e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ab9737924e1ec5b1dce29c99323b5192 = $(`<div id="html_ab9737924e1ec5b1dce29c99323b5192" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 38th / Blake Station<br>         <b>Local Routes:</b> 12<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> A<br>         <b>Address:</b> 3737 Blake St<br>         <b>Parcel ID:</b> Stop#: 34466 (South)<br />Stop#: 34465 (North)<br>         <b>Location:</b> 38th & Blake<br>         <b>Rail Line:</b> A<br>         <b>Stop ID:</b> 34684         </div>`)[0];
+                popup_d211712fe4dde4da6fedb7128665a1e2.setContent(html_ab9737924e1ec5b1dce29c99323b5192);
+            
+        
+
+        marker_b61fad9bc3070a9a92e22b237dcea5e7.bindPopup(popup_d211712fe4dde4da6fedb7128665a1e2)
+        ;
+
+        
+    
+    
+            var marker_7d8e0e8ee403d658b78dc9cdf2a54898 = L.marker(
+                [39.806945, -104.783907],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_8e21d9862130be18d388ff4832809af0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7d8e0e8ee403d658b78dc9cdf2a54898.setIcon(icon_8e21d9862130be18d388ff4832809af0);
+        
+    
+        var popup_65967a74846300dd4ba60e020ac5ada3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d64f13f45c5f26f0143c9edf6bfa27be = $(`<div id="html_d64f13f45c5f26f0143c9edf6bfa27be" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 61st / Pena Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b>  <br>         <b>Limited Routes:</b>  <br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> A<br>         <b>Address:</b> 6045 N Richfield St<br>         <b>Parcel ID:</b> Stop#: 34606 (South)<br />Stop#: 34605 (North)<br>         <b>Location:</b> Accessible via 64th & Tower Rd<br>         <b>Rail Line:</b> A<br>         <b>Stop ID:</b> 34685         </div>`)[0];
+                popup_65967a74846300dd4ba60e020ac5ada3.setContent(html_d64f13f45c5f26f0143c9edf6bfa27be);
+            
+        
+
+        marker_7d8e0e8ee403d658b78dc9cdf2a54898.bindPopup(popup_65967a74846300dd4ba60e020ac5ada3)
+        ;
+
+        
+    
+    
+            var marker_9848625b13c534984ee72e93e0e86743 = L.marker(
+                [39.532268, -104.869854],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_0a5ef5666cf940e2cd4be061228ced53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9848625b13c534984ee72e93e0e86743.setIcon(icon_0a5ef5666cf940e2cd4be061228ced53);
+        
+    
+        var popup_d9e1fd33fe8a4f7673d152cc3544f83e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5646369e025801405059b847e18c7eb7 = $(`<div id="html_5646369e025801405059b847e18c7eb7" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Sky Ridge Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b> nan<br>         <b>Limited Routes:</b> nan<br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E<br>         <b>Address:</b> 9941 Trainstation Circle<br>         <b>Parcel ID:</b> Stop#: 35204 (South)<br />Stop#: 35205 (North)<br>         <b>Location:</b> Sky Ridge Hospital<br>         <b>Rail Line:</b> E<br>         <b>Stop ID:</b> 35243         </div>`)[0];
+                popup_d9e1fd33fe8a4f7673d152cc3544f83e.setContent(html_5646369e025801405059b847e18c7eb7);
+            
+        
+
+        marker_9848625b13c534984ee72e93e0e86743.bindPopup(popup_d9e1fd33fe8a4f7673d152cc3544f83e)
+        ;
+
+        
+    
+    
+            var marker_ffd0fb1aed601bd8de8d5aa93f472ed9 = L.marker(
+                [39.527669, -104.86294],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_21b99646628cf9475d1fa068804301b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ffd0fb1aed601bd8de8d5aa93f472ed9.setIcon(icon_21b99646628cf9475d1fa068804301b2);
+        
+    
+        var popup_37d0f866f0598e8ca9285b79e29369a0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_974d2dc041b06520bfb3fab4af285f16 = $(`<div id="html_974d2dc041b06520bfb3fab4af285f16" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Lone Tree City Center Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b> nan<br>         <b>Limited Routes:</b> nan<br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E<br>         <b>Address:</b> 11023 RidgeGate Pkwy<br>         <b>Parcel ID:</b> Stop#: 35207 (South)<br />Stop#: 35209 (North)<br>         <b>Location:</b> RidgeGate Pkwy & S Havana St<br>         <b>Rail Line:</b> E<br>         <b>Stop ID:</b> 35244         </div>`)[0];
+                popup_37d0f866f0598e8ca9285b79e29369a0.setContent(html_974d2dc041b06520bfb3fab4af285f16);
+            
+        
+
+        marker_ffd0fb1aed601bd8de8d5aa93f472ed9.bindPopup(popup_37d0f866f0598e8ca9285b79e29369a0)
+        ;
+
+        
+    
+    
+            var marker_ada536e4ca622ff179b24275a3eb0c56 = L.marker(
+                [39.51936, -104.865365],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_94ed7cc7e9f5230ccde13882034b5d16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ada536e4ca622ff179b24275a3eb0c56.setIcon(icon_94ed7cc7e9f5230ccde13882034b5d16);
+        
+    
+        var popup_8a7b9a9e19b7bf533a3b675e727b3d81 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_120974a8d44e00d84b55a033908409c0 = $(`<div id="html_120974a8d44e00d84b55a033908409c0" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> RidgeGate Parkway Station<br>         <b>Local Routes:</b> nan<br>         <b>Express Routes:</b> nan<br>         <b>Limited Routes:</b> nan<br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> E<br>         <b>Address:</b> 10791 S Havana Street<br>         <b>Parcel ID:</b> Stop#: 35211 (South)<br />Stop#: 35212 (North)<br>         <b>Location:</b> RidgeGate Pkwy & S Havana St<br>         <b>Rail Line:</b> E<br>         <b>Stop ID:</b> 35245         </div>`)[0];
+                popup_8a7b9a9e19b7bf533a3b675e727b3d81.setContent(html_120974a8d44e00d84b55a033908409c0);
+            
+        
+
+        marker_ada536e4ca622ff179b24275a3eb0c56.bindPopup(popup_8a7b9a9e19b7bf533a3b675e727b3d81)
+        ;
+
+        
+    
+    
+            var marker_83e5ee10620d776e2aa24dfb84bb22a2 = L.marker(
+                [39.784667, -104.967472],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_11a4914c7df73b50f0a6781a53409db5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_83e5ee10620d776e2aa24dfb84bb22a2.setIcon(icon_11a4914c7df73b50f0a6781a53409db5);
+        
+    
+        var popup_db6d415db9050ac5fa7c1354e24e0205 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1282fd2c0b7ff0a383ef3f2e54bdf733 = $(`<div id="html_1282fd2c0b7ff0a383ef3f2e54bdf733" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> 48th Ave/Brighton Blvd@Nat'l Western Ctr<br>         <b>Local Routes:</b> 48<br>         <b>Express Routes:</b> nan<br>         <b>Limited Routes:</b> nan<br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> N<br>         <b>Address:</b> 4903 N Brighton Blvd<br>         <b>Parcel ID:</b> Stop#: 35246 (South)<br />Stop#: 35247 (North)<br>         <b>Location:</b> 48th Ave & Brighton Blvd<br>         <b>Rail Line:</b> N<br>         <b>Stop ID:</b> 35362         </div>`)[0];
+                popup_db6d415db9050ac5fa7c1354e24e0205.setContent(html_1282fd2c0b7ff0a383ef3f2e54bdf733);
+            
+        
+
+        marker_83e5ee10620d776e2aa24dfb84bb22a2.bindPopup(popup_db6d415db9050ac5fa7c1354e24e0205)
+        ;
+
+        
+    
+    
+            var marker_2ee856899e6c81d865ac06263c57306b = L.marker(
+                [39.826497, -104.942292],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_36b52f365c5b95ef97b932066e4ab0fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2ee856899e6c81d865ac06263c57306b.setIcon(icon_36b52f365c5b95ef97b932066e4ab0fa);
+        
+    
+        var popup_f65d3f991289c72983b6a526a1f3a529 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_33a9055b48348d1f3fdca6a7871a4d21 = $(`<div id="html_33a9055b48348d1f3fdca6a7871a4d21" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Commerce City / 72nd Ave<br>         <b>Local Routes:</b> 49-72-88-88L<br>         <b>Express Routes:</b> nan<br>         <b>Limited Routes:</b> nan<br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> N<br>         <b>Address:</b> 3838 E 72nd Ave<br>         <b>Parcel ID:</b> Stop#: 35248 (South)<br />Stop#: 35249 (North)<br>         <b>Location:</b> 72nd Ave & Colorado Blvd<br>         <b>Rail Line:</b> N<br>         <b>Stop ID:</b> 35363         </div>`)[0];
+                popup_f65d3f991289c72983b6a526a1f3a529.setContent(html_33a9055b48348d1f3fdca6a7871a4d21);
+            
+        
+
+        marker_2ee856899e6c81d865ac06263c57306b.bindPopup(popup_f65d3f991289c72983b6a526a1f3a529)
+        ;
+
+        
+    
+    
+            var marker_5da0e27b4af49388330fc319b8b2889b = L.marker(
+                [39.858851, -104.952449],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_2addf2cdb4739f3946f4f8bf4d1ebd36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5da0e27b4af49388330fc319b8b2889b.setIcon(icon_2addf2cdb4739f3946f4f8bf4d1ebd36);
+        
+    
+        var popup_1bddd5b714052202a2ab1f806ce7f082 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_473c006c024b574870736c6688015a01 = $(`<div id="html_473c006c024b574870736c6688015a01" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Original Thornton / 88th Ave<br>         <b>Local Routes:</b> 88L-92<br>         <b>Express Routes:</b> nan<br>         <b>Limited Routes:</b> nan<br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> N<br>         <b>Address:</b> 8989 Welby Rd<br>         <b>Parcel ID:</b> Stop#: 35250 (South)<br />Stop#: 35251 (North)<br>         <b>Location:</b> 88th Ave & Welby Rd<br>         <b>Rail Line:</b> N<br>         <b>Stop ID:</b> 35364         </div>`)[0];
+                popup_1bddd5b714052202a2ab1f806ce7f082.setContent(html_473c006c024b574870736c6688015a01);
+            
+        
+
+        marker_5da0e27b4af49388330fc319b8b2889b.bindPopup(popup_1bddd5b714052202a2ab1f806ce7f082)
+        ;
+
+        
+    
+    
+            var marker_875f01acd068911fa9675df7f9ea5bbb = L.marker(
+                [39.881986, -104.940968],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_df516c7c3da9bddf8dca99515786b85a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_875f01acd068911fa9675df7f9ea5bbb.setIcon(icon_df516c7c3da9bddf8dca99515786b85a);
+        
+    
+        var popup_8eb037f3b794add93fc6ff7939b0a3cb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_626d76f225b1d4a58ff04e3164cc31a6 = $(`<div id="html_626d76f225b1d4a58ff04e3164cc31a6" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Thornton Crossroads / 104th Ave<br>         <b>Local Routes:</b> 93L-104L<br>         <b>Express Routes:</b> nan<br>         <b>Limited Routes:</b> nan<br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> N<br>         <b>Address:</b> 10375 Colorado Blvd<br>         <b>Parcel ID:</b> Stop#: 35252 (South)<br />Stop#: 35253 (North)<br>         <b>Location:</b> 104th Ave & Colorado Blvd<br>         <b>Rail Line:</b> N<br>         <b>Stop ID:</b> 35365         </div>`)[0];
+                popup_8eb037f3b794add93fc6ff7939b0a3cb.setContent(html_626d76f225b1d4a58ff04e3164cc31a6);
+            
+        
+
+        marker_875f01acd068911fa9675df7f9ea5bbb.bindPopup(popup_8eb037f3b794add93fc6ff7939b0a3cb)
+        ;
+
+        
+    
+    
+            var marker_0690af485bf9a104f9d23feed8a8e890 = L.marker(
+                [39.902677, -104.959583],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_169c357d00c309c7df1fdb86ab87fa43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0690af485bf9a104f9d23feed8a8e890.setIcon(icon_169c357d00c309c7df1fdb86ab87fa43);
+        
+    
+        var popup_f897d4efdc54f02271dee63f0f27df28 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c09b58f8b5aac27ed7a318c3d90f2de3 = $(`<div id="html_c09b58f8b5aac27ed7a318c3d90f2de3" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Northglenn / 112th Ave<br>         <b>Local Routes:</b> 12-112<br>         <b>Express Routes:</b> nan<br>         <b>Limited Routes:</b> nan<br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> N<br>         <b>Address:</b> 11355 York St<br>         <b>Parcel ID:</b> Stop#: 35254 (South)<br />Stop#: 35255 (North)<br>         <b>Location:</b> 112th Ave & York St<br>         <b>Rail Line:</b> N<br>         <b>Stop ID:</b> 35366         </div>`)[0];
+                popup_f897d4efdc54f02271dee63f0f27df28.setContent(html_c09b58f8b5aac27ed7a318c3d90f2de3);
+            
+        
+
+        marker_0690af485bf9a104f9d23feed8a8e890.bindPopup(popup_f897d4efdc54f02271dee63f0f27df28)
+        ;
+
+        
+    
+    
+            var marker_dce8bb00f78b321843f10d99fcc90f66 = L.marker(
+                [39.922525, -104.962657],
+                {}
+            ).addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+    
+            var icon_54a105093bb3ab3064391ebf9750e22a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_dce8bb00f78b321843f10d99fcc90f66.setIcon(icon_54a105093bb3ab3064391ebf9750e22a);
+        
+    
+        var popup_eb79903c05b6a80e176ad762110370c8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bcb8f2336a0077c9b320d0a2624bead0 = $(`<div id="html_bcb8f2336a0077c9b320d0a2624bead0" style="width: 100.0%; height: 100.0%;">         <h3>Light Rail Information</h3>         <b>Name:</b> Eastlake / 124th Ave<br>         <b>Local Routes:</b> 120E-120L<br>         <b>Express Routes:</b> nan<br>         <b>Limited Routes:</b> nan<br>         <b>Regional Routes:</b> nan<br>         <b>SkyRide Routes:</b> nan<br>         <b>Special Routes:</b> N<br>         <b>Address:</b> 12500 Claude Ct<br>         <b>Parcel ID:</b> Stop#: 35256 (South)<br />Stop#: 35257 (North)<br>         <b>Location:</b> 124th Ave & Claude Ct<br>         <b>Rail Line:</b> N<br>         <b>Stop ID:</b> 35367         </div>`)[0];
+                popup_eb79903c05b6a80e176ad762110370c8.setContent(html_bcb8f2336a0077c9b320d0a2624bead0);
+            
+        
+
+        marker_dce8bb00f78b321843f10d99fcc90f66.bindPopup(popup_eb79903c05b6a80e176ad762110370c8)
+        ;
+
+        
+    
+    
+            tile_layer_6343be354903d8b6dbb885baf824c329.addTo(map_8a1ddbf75087be635dd6a4a03020d6c9);
+        
+</script>
+</html>
